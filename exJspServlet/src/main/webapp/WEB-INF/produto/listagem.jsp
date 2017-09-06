@@ -29,12 +29,11 @@
                 <jsp:include page="../partials/menu.html"></jsp:include>
                     <div class="col-xs-12 col-md-10">
                     <c:forEach items="${listaProdutos}" var="p">
-                        <div class="col-xs-12 col-md-4 panel panel-info">
-                            <p><c:out value="${p.id}"></c:out></p>
-                            <img class="img-thumbnail" src=<c:out value="${p.imgUrl}"></c:out>>
-                            <p><c:out value="${p.nome}"></c:out></p>
-                            <p><c:out value="${p.descricao}"></c:out></p>
-                            <p><c:out value="${p.preco}"></c:out></p>
+                        <div class="col-xs-12 col-md-4 info-produto">
+                            <img class="img-responsive" src=<c:out value="${p.imgUrl}"></c:out>>
+                            <p>${p.nome}</p>
+                            <p>${p.descricao}</p>
+                            <p><fmt:formatNumber value="${p.preco}" currencySymbol="R$ " type="currency"></fmt:formatNumber></p>
                             </div>
                     </c:forEach>
                 </div>
