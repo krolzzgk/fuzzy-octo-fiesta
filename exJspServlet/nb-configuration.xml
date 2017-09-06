@@ -24,5 +24,15 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>js/libs</org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>
         <org-netbeans-modules-javascript2-requirejs.enabled>true</org-netbeans-modules-javascript2-requirejs.enabled>
     </properties>
-    <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
+    <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+        <library name="jquery" version="3.2.1">
+            <file localPath="src/main/webapp/js/libs/jquery/core.js" path="core.js"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.js" path="jquery.js"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.min.js" path="jquery.min.js"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.min.map" path="jquery.min.map"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.slim.js" path="jquery.slim.js"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.slim.min.js" path="jquery.slim.min.js"/>
+            <file localPath="src/main/webapp/js/libs/jquery/jquery.slim.min.map" path="jquery.slim.min.map"/>
+        </library>
+    </libraries>
 </project-shared-configuration>

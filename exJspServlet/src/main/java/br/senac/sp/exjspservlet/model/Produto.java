@@ -13,12 +13,14 @@ public class Produto implements java.io.Serializable{
     //Criar uma classe produto com os seguintes atributos: id, nome, descrição, preço, seguindo o modelo JavaBean
     
     private int id;
+    private String imgUrl;
     private String nome;
     private String descricao;
     private double preco;
 
-    public Produto(int id, String nome, String descricao, double preco) {
+    public Produto(int id, String imgUrl, String nome, String descricao, double preco) {
         this.id = id;
+        this.imgUrl = imgUrl;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
@@ -33,6 +35,14 @@ public class Produto implements java.io.Serializable{
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getNome() {
@@ -58,6 +68,6 @@ public class Produto implements java.io.Serializable{
     public void setPreco(double preco) {
         this.preco = preco;
     }
-   
-    
+
+
 }

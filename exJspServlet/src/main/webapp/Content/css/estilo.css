@@ -1,0 +1,42 @@
+.cabecalho{
+    background-color: hsla(277, 15%, 70%, 1);
+    border: 4px dotted white;
+}
+
+.titulo-loja{
+    font-size: 26pt;
+    margin-left: 20px;
+    float: left;
+}
+
+.menu-superior-direita{
+    list-style-type: none;
+    font-size: 14pt;
+    float: right;
+    margin-top:30px;
+}
+
+.menu-superior-direita li{ 
+    display: inline;
+    padding: 10px;
+}
+
+.mouse-hover:hover{
+	font-weight: bold;
+}
+
+.menu-principal{
+    background-color: hsla(277, 4%, 15%, 1);
+    color: white;
+    border: 5px dotted white;
+}
+
+.menu-principal ul{
+    list-style-type: none;
+    font-size: 18pt;
+    text-align: left;
+}
+
+hr{
+	border: 1px dotted hsla(277, 4%, 15%, 1);
+}
